@@ -7,6 +7,7 @@ import ToTcIntro from './TOTC_intro/ToTcIntro';
 import ClassRoom from './class_room/ClassRoom';
 import Footer from './footer/Footer';
 import FeaturesSection from './features_Section/Features';
+import TeachersTools from './tacher_tools/Teachers_Tools';
 
 
 const HomePage = () => {
@@ -18,7 +19,8 @@ const HomePage = () => {
       <CloudFeatures />
       <ToTcIntro />
       <ClassRoom />
-      <FeaturesSection/>
+      <FeaturesSection />
+      <TeachersTools />
       <Footer />
     </div>
   )
