@@ -1,9 +1,20 @@
-import React from 'react'
-import mainImgSvg from '@/app/assets/images/mainLogo2.svg'
+import React from 'react';
+import Link from 'next/link';
+import mainImgSvg from '@/app/assets/images/mainLogo2.svg';
 import Image from 'next/image';
+interface FooterLink {
+  label: string;
+  link: string;
+}
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+
+  const footerData: FooterLink[] = [
+    { label: 'Careers', link: '/careers' },
+    { label: 'Privacy Policy', link: '/privacy' },
+    { label: 'Terms & conditions', link: '/terms' },
+  ];
 
   return (
     <div className="bg-[#252641]">
@@ -11,7 +22,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 w-full max-w-2xl mx-auto px-4">
           {/* Step 01 - Logo and Title */}
           <div className="grid grid-cols-1 sm:grid-cols-2 items-center justify-center gap-8 w-full max-w-md mx-auto">
-            <div className="pl-14 flex justify-center not-last:border-r not-last:border-gray-300 pr-4 sm:pr-0  ">
+            <div className="pl-14 flex justify-center border-r border-gray-300 pr-4 sm:pr-0">
               <Image
                 src={mainImgSvg}
                 alt="TOTC Logo"
@@ -37,6 +48,8 @@ const Footer = () => {
             <form className="flex flex-col sm:flex-row items-center gap-4 mt-5 w-full max-w-md mx-auto">
               <input
                 type="email"
+                name="email"
+                id="email"
                 placeholder="Your email"
                 className="border border-gray-400 rounded-full px-6 py-3 w-full text-gray-400 mb-2 sm:mb-0"
               />
@@ -52,22 +65,25 @@ const Footer = () => {
           {/* Step 03 - Links and Copyright */}
           <div className="text-[#B2B3CF] flex flex-col items-center gap-4 mt-10 px-4">
             <ul className="grid grid-cols-1 sm:grid-cols-3 items-center justify-center gap-4 w-full max-w-md">
-              {['Careers', 'Privacy Policy', 'Terms & conditions'].map(
-                (item, i) => {
-                  return (
-                    <li
-                      key={i}
-                      className={`text-center py-2 ${
-                        i < 2
-                          ? 'border-b sm:border-b-0 sm:border-r border-gray-400'
-                          : ''
-                      }`}
+              {footerData.map((item, i) => {
+                return (
+                  <li
+                    key={i}
+                    className={`text-center py-2 ${
+                      i < 2
+                        ? 'border-b sm:border-b-0 sm:border-r border-gray-400'
+                        : ''
+                    }`}
+                  >
+                    <Link
+                      href={item.link}
+                      className="hover:text-white transition-colors duration-200"
                     >
-                      {item}
-                    </li>
-                  );
-                }
-              )}
+                      {item.label}
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
 
             <p className="text-center">

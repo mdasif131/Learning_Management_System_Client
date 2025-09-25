@@ -6,6 +6,7 @@ import CloudFeatures from '@/components/homeLayout/cloud_Features/CloudFeatures'
 import ToTcIntro from './TOTC_intro/ToTcIntro';
 import ClassRoom from './class_room/ClassRoom';
 import Footer from './footer/Footer';
+import FeaturesSection from './features_Section/Features';
 
 
 const HomePage = () => {
@@ -17,6 +18,7 @@ const HomePage = () => {
       <CloudFeatures />
       <ToTcIntro />
       <ClassRoom />
+      <FeaturesSection/>
       <Footer />
     </div>
   )
