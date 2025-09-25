@@ -4,10 +4,10 @@ import Image from 'next/image';
 const Assessment = () => {
   return (
     <div className="container mx-auto py-20 grid grid-cols-1 md:grid-cols-2 items-center justify-around px-4">
-      <div>
+      <div className='max-md:order-2'>
         <Image src={assessmentImg} alt="teacherImg" width={640} height={615} />
       </div>
-      <div>
+      <div className='max-md:order-1'>
         <h1 className="text-[#2F327D] font-bold text-4xl leading-[160%]">
           Assessments,
           <br /> <span className="text-[#00CBB8]"> Quizzes</span>, Tests

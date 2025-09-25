@@ -10,6 +10,7 @@ import FeaturesSection from './features_Section/Features';
 import TeachersTools from './tacher_tools/Teachers_Tools';
 import ManagementClass from './managment_section/ManagementClass';
 import Assessment from './Assessments/Assessment';
+import Discussisons from './Discussions_section/Discussisons';
 
 
 const HomePage = () => {
@@ -25,6 +26,7 @@ const HomePage = () => {
       <TeachersTools />
       <Assessment />
       <ManagementClass />
+      <Discussisons />
       <Footer />
     </div>
   )
