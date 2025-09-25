@@ -8,6 +8,8 @@ import ClassRoom from './class_room/ClassRoom';
 import Footer from './footer/Footer';
 import FeaturesSection from './features_Section/Features';
 import TeachersTools from './tacher_tools/Teachers_Tools';
+import ManagementClass from './managment_section/ManagementClass';
+import Assessment from './Assessments/Assessment';
 
 
 const HomePage = () => {
@@ -21,6 +23,8 @@ const HomePage = () => {
       <ClassRoom />
       <FeaturesSection />
       <TeachersTools />
+      <Assessment />
+      <ManagementClass />
       <Footer />
     </div>
   )
