@@ -3,6 +3,7 @@ import Navbar from '@/components/homeLayout/navber/navber';
 import Hero from '@/components/homeLayout/hero/Hero';
 import SeccessSection from '@/components/homeLayout/seccess_Section/seccessSection'
 import CloudFeatures from '@/components/homeLayout/cloud_Features/CloudFeatures';
+import ToTcIntro from './cloud_Features/ToTcIntro';
 
 
 const HomePage = () => {
@@ -11,7 +12,8 @@ const HomePage = () => {
       <Navbar />
       <Hero />
       <SeccessSection />
-      <CloudFeatures/>
+      <CloudFeatures />
+      <ToTcIntro />
     </div>
   )
 }
