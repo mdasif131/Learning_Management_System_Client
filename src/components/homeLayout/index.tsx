@@ -5,6 +5,7 @@ import SeccessSection from '@/components/homeLayout/seccess_Section/seccessSecti
 import CloudFeatures from '@/components/homeLayout/cloud_Features/CloudFeatures';
 import ToTcIntro from './TOTC_intro/ToTcIntro';
 import ClassRoom from './class_room/ClassRoom';
+import Footer from './footer/Footer';
 
 
 const HomePage = () => {
@@ -16,6 +17,7 @@ const HomePage = () => {
       <CloudFeatures />
       <ToTcIntro />
       <ClassRoom />
+      <Footer />
     </div>
   )
 }
