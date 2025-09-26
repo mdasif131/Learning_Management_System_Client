@@ -11,6 +11,7 @@ import Footer from './footer/Footer';
 import ManagementClass from './managment_section/ManagementClass';
 import TeachersTools from './tacher_tools/Teachers_Tools';
 import WhatSay from './Testimonial_caurasel/WhatSay';
+import NewsSection from './News_Section/NewsSection';
 
 const HomePage = () => {
   return (
@@ -27,6 +28,7 @@ const HomePage = () => {
       <ManagementClass />
       <Discussisons />
       <WhatSay />
+      <NewsSection />
       <Footer />
     </div>
   );
