@@ -31,7 +31,7 @@ const FeaturesSection = () => {
           {/* Main container with responsive scaling */}
           <div
             className="relative w-full h-0 pb-[65%] sm:pb-[60%] md:pb-[55%] lg:scale-100 lg:rotate-0 lg:translate-0 lg:mt-0 
-                         scale-75 lg:-rotate-180 -translate-y-10 -translate-x-5 mx-auto lg:mx-0"
+                         scale-75  -translate-y-10 -translate-x-5 mx-auto lg:mx-0"
           >
             {/* Main background image */}
             <div className="absolute inset-0">
