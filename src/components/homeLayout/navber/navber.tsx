@@ -14,7 +14,7 @@ const Navbar = () => {
     <nav
       className={`${isOpen ? 'bg-gray-500' : 'bg-[#49BBBD]'} relative  shadow`}
     >
-      <div className="container px-6 py-4 mx-auto">
+      <div className=" container px-6 py-4 mx-auto">
         <div className="lg:flex lg:items-center lg:justify-between">
           <div className="flex items-center justify-between">
             <Link href="/">
