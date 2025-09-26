@@ -55,31 +55,31 @@ const Navbar = () => {
           >
             <div className="flex flex-col -mx-6 lg:flex-row lg:items-center lg:mx-8">
               <Link
-                href="#"
+                href={'/'}
                 className="px-3 py-2 mx-3 mt-2 rounded-md lg:mt-0 text-gray-100 hover:text-black transition-colors duration-300"
               >
                 Home
               </Link>
               <Link
-                href="#"
+                href={'/courses'}
                 className="px-3 py-2 mx-3 mt-2 rounded-md lg:mt-0  text-gray-100 hover:text-black transition-colors duration-300"
               >
                 Courses
               </Link>
               <Link
-                href="#"
+                href={'/careers'}
                 className="px-3 py-2 mx-3 mt-2 rounded-md lg:mt-0  text-gray-100 hover:text-black transition-colors duration-300"
               >
                 Careers
               </Link>
               <Link
-                href="#"
+                href={'/blogs'}
                 className="px-3 py-2 mx-3 mt-2 rounded-md lg:mt-0  text-gray-100 hover:text-black transition-colors duration-300"
               >
                 Blog
               </Link>
               <Link
-                href="#"
+                href={'/about'}
                 className="px-3 py-2 mx-3 mt-2 rounded-md lg:mt-0  text-gray-100 hover:text-black transition-colors duration-300"
               >
                 About Us
