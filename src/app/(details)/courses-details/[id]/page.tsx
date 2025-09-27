@@ -1,15 +1,44 @@
+import course_details_img from '@/app/assets/images/courses_Image/couses_detail_img.png';
 import LayoutNavFot from '@/components/homeLayout/Layout/LayoutNavFot';
-import React from 'react';
+import CoursesDetails from '@/components/Pages/CoursesDetals/coursesDetails';
+import ReviewPage from '@/components/Pages/CoursesDetals/CoursesReviews';
+import {
+  coursesData
+} from '@/components/Pages/CoursesPage/CoursesCard';
+import type { StaticImageData } from 'next/image';
+import Image from 'next/image';
 interface DetailsProps {
   params: {
     id: string;
   };
 }
+
 const Page = ({ params }: DetailsProps) => {
   const { id } = params;
+  const findCourse = coursesData.find(item => item.id === Number(id));
+  
   return (
     <LayoutNavFot>
-      <div>You id is : {id}</div>
+      <div className="relative min-h-screen ">
+        <div>
+          <Image
+            src={course_details_img as string | StaticImageData}
+            alt="image"
+            width={1920}
+            height={600}
+          />
+        </div>
+        <div className="px-4 py-20 ">
+          <div className="xl:absolute right-20  top-90">
+            <CoursesDetails details={findCourse} />
+          </div>
+          <div>
+            <div className="max-lg:w-full lg:w-4/6 px-4 mt-4 z-30">
+              <ReviewPage />
+            </div>
+          </div>
+        </div>
+      </div>
     </LayoutNavFot>
   );
 };
