@@ -3,11 +3,12 @@ import LayoutNavFot from '@/components/homeLayout/Layout/LayoutNavFot'
 import React from 'react'
 
 const Courses = () => {
+
   return (
-    <LayoutNavFot>
+    <LayoutNavFot navBgColor="bg-white">
       <CoursesPage />
     </LayoutNavFot>
-  )
+  );
 }
 
 export default Courses

@@ -1,13 +1,12 @@
 // Add this at the top of the file to mark it as a client-side component
 'use client';
 
-import { useState } from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
 import mainLogo from '@/app/assets/images/mainLogo.png';
+import Image from 'next/image';
+import Link from 'next/link';
+import { useState } from 'react';
 import { HiMenu, HiX } from 'react-icons/hi';
 const Navbar = () => {
-  // State to manage the mobile menu's open/closed status
   const [isOpen, setIsOpen] = useState(false);
 
   return (
