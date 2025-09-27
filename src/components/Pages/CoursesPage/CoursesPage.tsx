@@ -1,6 +1,7 @@
 import React from 'react'
 import SearchWithFilter from './SearchWithFilter'
 import CoursesCard from './CoursesCard'
+import LearningPlatfom from './LearningPlatfom';
 
 const CoursesPage = () => {
   return (
@@ -9,6 +10,7 @@ const CoursesPage = () => {
       <div className=' container mx-auto py-20 px-6'>
         <CoursesCard />
       </div>
+      <LearningPlatfom />
     </div>
   );
 }
