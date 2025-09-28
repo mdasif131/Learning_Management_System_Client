@@ -6,6 +6,8 @@ const Register = () => {
   const togglePassword = () => {
     setPassword(!showPassword);
   };
+
+  
   return (
     <div className="text-black">
       <h1 className=" mt-3 text-center">Register Your Account</h1>

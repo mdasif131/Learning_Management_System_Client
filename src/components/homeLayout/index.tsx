@@ -10,6 +10,8 @@ import NewsSection from './News_Section/NewsSection';
 import TeachersTools from './tacher_tools/Teachers_Tools';
 import WhatSay from './Testimonial_caurasel/WhatSay';
 import ToTcIntro from './TOTC_intro/ToTcIntro';
+import Accordion from './Accordion/Accordion';
+import Carousel from './Accordion/Accordion';
 
 const HomePage = () => {
   return (
@@ -23,6 +25,8 @@ const HomePage = () => {
       <TeachersTools />
       <Assessment />
       <ManagementClass />
+      {/* <Accordion /> */}
+    <Carousel />
       <Discussisons />
       <WhatSay />
       <NewsSection />
