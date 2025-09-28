@@ -4,6 +4,7 @@ import CoursesCard from './CoursesCard'
 import LearningPlatfom from './LearningPlatfom';
 import Recommended from './Recommended';
 import TeachersSection from './TeachersSection';
+import StudendSay from './StudendSay';
 
 
 const CoursesPage = () => {
@@ -16,6 +17,7 @@ const CoursesPage = () => {
       <LearningPlatfom />
       <Recommended />
       <TeachersSection />
+      <StudendSay />
     </div>
   );
 }

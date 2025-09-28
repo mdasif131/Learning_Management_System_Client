@@ -4,7 +4,6 @@ import tacher_2 from '@/app/assets/images/courses_Image/tacher_2.png'
 import tacher_3 from '@/app/assets/images/courses_Image/tacher_3.png'
 import type { StaticImageData } from 'next/image';
 import Image from 'next/image';
-import { div } from 'framer-motion/client';
 interface ITeachers {
   id:number,
   avater: string | StaticImageData;
