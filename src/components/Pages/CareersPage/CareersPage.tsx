@@ -1,8 +1,11 @@
+import NotFound from '@/components/Common/NotFoun'
 import React from 'react'
 
 const CareersPage = () => {
   return (
-    <div>CareersPage</div>
+    <div>
+      <NotFound />
+    </div>
   )
 }
 
