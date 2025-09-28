@@ -146,7 +146,7 @@ const CoursesCard = () => {
         }
         return (
           <Link href={`/courses-details/${item.id}`} key={i}>
-            <div className="w-full max-w-[380px] rounded-[20px] bg-white shadow-[0_18.83px_47.08px_0_rgba(47,50,125,0.10)] p-4">
+            <div className="w-full max-w-[380px] mx-auto rounded-[20px] bg-white shadow-[0_18.83px_47.08px_0_rgba(47,50,125,0.10)] p-4">
               {/* Image */}
               <div className="p-2">
                 <Image src={item.image} alt="image" width={400} height={300} />
