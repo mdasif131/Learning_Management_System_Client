@@ -3,6 +3,7 @@ import SearchWithFilter from './SearchWithFilter'
 import CoursesCard from './CoursesCard'
 import LearningPlatfom from './LearningPlatfom';
 import Recommended from './Recommended';
+import TeachersSection from './TeachersSection';
 
 
 const CoursesPage = () => {
@@ -13,7 +14,8 @@ const CoursesPage = () => {
         <CoursesCard  />
       </div>
       <LearningPlatfom />
-      <Recommended  />
+      <Recommended />
+      <TeachersSection />
     </div>
   );
 }

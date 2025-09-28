@@ -14,7 +14,7 @@ const Recommended = () => {
           <button className="font-bold text-lg md:text-xl text-[#49BBBD]">See all</button>
         </div>
         <div className=" mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 w-full mx-auto">
-          {coursesData.slice(1,4).map((item, i) => {
+          {coursesData.slice(0,4).map((item, i) => {
             let price = (
               <p className="mx-auto text-lg sm:text-xl md:text-2xl font-bold text-[#49BBBD]">
                 ${item.price}
