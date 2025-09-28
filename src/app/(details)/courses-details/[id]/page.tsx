@@ -1,10 +1,13 @@
 import course_details_img from '@/app/assets/images/courses_Image/couses_detail_img.png';
+import ClassRoom from '@/components/homeLayout/class_room/ClassRoom';
 import LayoutNavFot from '@/components/homeLayout/Layout/LayoutNavFot';
 import CoursesDetails from '@/components/Pages/CoursesDetals/coursesDetails';
 import ReviewPage from '@/components/Pages/CoursesDetals/CoursesReviews';
 import {
   coursesData
 } from '@/components/Pages/CoursesPage/CoursesCard';
+import Recommended from '@/components/Pages/CoursesPage/Recommended';
+import TopEducaton from '@/components/Pages/CoursesPage/TopEducaton';
 import type { StaticImageData } from 'next/image';
 import Image from 'next/image';
 interface DetailsProps {
@@ -37,6 +40,15 @@ const Page = ({ params }: DetailsProps) => {
               <ReviewPage />
             </div>
           </div>
+        </div>
+        <div className='mt-40'>
+          <Recommended />
+        </div>
+        <div className='mt-20'>
+          <ClassRoom />
+        </div>
+        <div>
+          <TopEducaton />
         </div>
       </div>
     </LayoutNavFot>

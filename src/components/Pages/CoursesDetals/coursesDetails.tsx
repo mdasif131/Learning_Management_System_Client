@@ -17,6 +17,7 @@ import {
 import { MdAccessTime } from 'react-icons/md';
 import { ICourse } from '../CoursesPage/CoursesCard';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const CoursesDetails: React.FC<CoursesDetailsProps> = ({ details }) => {
   return (
@@ -47,15 +48,17 @@ const CoursesDetails: React.FC<CoursesDetailsProps> = ({ details }) => {
         <div className="text-sm text-blue-500 mb-6 flex items-center gap-1">
           <MdAccessTime className="inline" /> 11 hour left at this price
         </div>
-        <h2 className='text-xl font-bold py-4'>{details.title}</h2>
+        <h2 className="text-xl font-bold py-4">{details.title}</h2>
         <div className="text-lg text-gray-500 mb-6 flex items-center gap-1">
           {details.des}
         </div>
 
         {/* Buy Now Button */}
-        <button className="w-full py-3 px-4 bg-teal-500 hover:bg-teal-600 text-white font-medium rounded-lg transition-colors duration-300">
-          Buy Now
-        </button>
+        <Link href={'/checkout'}>
+          <button className="w-full py-3 px-4 bg-teal-500 hover:bg-teal-600 text-white font-medium rounded-lg transition-colors duration-300 cursor-pointer">
+            Buy Now
+          </button>
+        </Link>
 
         {/* Divider */}
         <div className="my-6 border-t border-gray-200"></div>
