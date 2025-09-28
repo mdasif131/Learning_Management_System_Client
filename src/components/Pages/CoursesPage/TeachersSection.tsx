@@ -5,10 +5,10 @@ import tacher_3 from '@/app/assets/images/courses_Image/tacher_3.png'
 import type { StaticImageData } from 'next/image';
 import Image from 'next/image';
 interface ITeachers {
-  id:number,
+  id: number;
   avater: string | StaticImageData;
-  name: string,
-  des: string,
+  name: string;
+  des: string;
 
 }
 const TeachersSection = () => {

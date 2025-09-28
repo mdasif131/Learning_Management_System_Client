@@ -5,6 +5,7 @@ import LearningPlatfom from './LearningPlatfom';
 import Recommended from './Recommended';
 import TeachersSection from './TeachersSection';
 import StudendSay from './StudendSay';
+import TopEducaton from './TopEducaton';
 
 
 const CoursesPage = () => {
@@ -18,6 +19,7 @@ const CoursesPage = () => {
       <Recommended />
       <TeachersSection />
       <StudendSay />
+      <TopEducaton />
     </div>
   );
 }
